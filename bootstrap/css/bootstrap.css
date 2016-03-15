@@ -4442,7 +4442,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     margin-bottom: 5px;
   }
   .navbar-form .form-group:last-child {
-    margin-bottom: 0;
+    margin-bottom: 8px;
   }
 }
 @media (min-width: 768px) {
@@ -6765,5 +6765,9 @@ button.close {
   .hidden-print {
     display: none !important;
   }
+}
+
+body {
+    padding-top: 70px;
 }
 /*# sourceMappingURL=bootstrap.css.map */

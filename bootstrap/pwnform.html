@@ -8,9 +8,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
 
-    <title>Theme Template for Bootstrap</title>
+    <title>Scan Request Form</title>
 
 
     <!-- Custom styles for this template -->
@@ -28,14 +28,45 @@
   </head>
 
   <body role="document">
-
-
-       <div class="jumbotron">
-        <h1>Theme example</h1>
-        <p>This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.</p>
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">CSH PWN Service</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="readme.html">Information</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
       </div>
+    </nav>
 
-
+    <div class="container theme-showcase" role="main">
+    <div class="col-md-5">
+     <form>
+         <fieldset class="form-group">
+             <label for="emailInput">Email Address for Report</label>
+             <input type="email" class="form-control" id="emailInput" placeholder="username@csh.rit.edu">
+         </fieldset>
+         <fieldset class="form-group">
+             <label for="beginIP">Beginning of IP range to scan</label>
+             <input type="text" class="form-control" id="beginIP" placeholder="Lower end of range">
+         </fieldset>
+         <button type="submit" class="btn" btn-primary">
+             Submit
+         </button>
+     </form>
+ 
+    </div>
+        </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
